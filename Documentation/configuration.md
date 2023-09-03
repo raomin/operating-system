@@ -11,6 +11,7 @@ modules/
 modprobe/
 udev/
 authorized_keys
+hostname
 timesyncd.conf
 hassos-xy.raucb
 ```
@@ -20,6 +21,7 @@ hassos-xy.raucb
 - The `modprobe` folder is for modules configuration files (/etc/modprobe.d)
 - The `udev` folder is for udev rules files.
 - The `authorized_keys` file activates debug SSH access on port `22222`. See [Debugging Home Assistant][debug-homeassistant].
+- The `hostname` file contains the custom name for this instance. Eg if this file contains `myhome`, the instance will be accessible at `myhome.local`.
 - The `timesyncd.conf` file allow you to set different NTP servers. HassOS won't boot without correct working time servers!
 - The `hassos-*.raucb` file is a firmware OTA update which will be installed. These can be found on on the [release][hassos-release] page.
 
